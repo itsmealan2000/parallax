@@ -1,0 +1,213 @@
+/* fonts */
+/* font-family: 'Marvel', sans-serif; */
+@font-face {
+    font-family: dxdina;
+    src: url(../font/DxDynamix-Bold.otf);
+}
+@font-face {
+    font-family: captainamerica;
+    src: url(../font/AmericanCaptain.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Marvel', sans-serif;
+}
+
+body{
+    background-image: url(../assets/bg.jpg);
+    background-attachment: contain;
+    background-repeat: no-repeat;
+}
+
+/* carousal */
+.movies{
+    height: 82.2vh;
+    padding: 10%;
+}
+@media (max-width:692px) {
+    .movies{
+        height: 85vh;
+        padding: 20%;
+      
+    }
+}
+@media (max-width:449px) {
+    .movies{
+        padding: 50%;
+    }
+
+}
+[type=radio] {
+    display: none;
+  }
+  
+  #slider {
+    height: 100%;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  
+  #slider label {
+    margin: auto;
+    width: 30%;
+    height: 120%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0; right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  
+  #s1:checked ~ #slide4, #s2:checked ~ #slide5,
+  #s3:checked ~ #slide1, #s4:checked ~ #slide2,
+  #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0);
+    transform: translate3d(-50%,0,-200px);
+  }
+  
+  #s1:checked ~ #slide5, #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2, #s4:checked ~ #slide3,
+  #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(-25%,0,-100px);
+  }
+  
+  #s1:checked ~ #slide1, #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3, #s4:checked ~ #slide4,
+  #s5:checked ~ #slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,0,0);
+  }
+  
+  #s1:checked ~ #slide2, #s2:checked ~ #slide3,
+  #s3:checked ~ #slide4, #s4:checked ~ #slide5,
+  #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(25%,0,-100px);
+  }
+  
+  #s1:checked ~ #slide3, #s2:checked ~ #slide4,
+  #s3:checked ~ #slide5, #s4:checked ~ #slide1,
+  #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0);
+    transform: translate3d(50%,0,-200px);
+  }
+  
+  #slide1 { background: url(../assets/carousalmovies/thor.jpg) 
+    no-repeat center center/contain; }
+    #slide2 { background: url(../assets/carousalmovies/ironman.jpg) 
+    no-repeat center center/contain; }
+    #slide3 { background: url(../assets/carousalmovies/captain.jpg)
+    no-repeat center center/contain; }
+    #slide4 { background: url(../assets/carousalmovies/panther.jpg)
+    no-repeat center center/contain; }
+    #slide5 { background: url(../assets/carousalmovies/doctor.jpg)
+    no-repeat center center/contain; }
+
+/* carousal end */
+
+/* captain america */
+.cap{
+    height: 100vh;
+    background-image:url(../assets/cap/capbg.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+li{
+    font-size: 2rem;
+}
+.caphead{
+    color: #ffffff;
+    font-family: captainamerica;
+    font-size: 7rem;
+    text-shadow: black;
+}
+@media (min-width:320px) {
+    .caphead{
+        font-size: 5rem;
+    }
+    .captext{
+      font-size: 24px;
+    }
+}
+
+.captext{
+  color: #ffffff;
+}
+.capimg{
+      width: 35%;
+}
+#scene{
+  overflow: hidden;
+}
+.imgholdercap{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* ironman */
+.ironman{
+    height: max-content ;
+    padding: 10%;
+    background-image: url(../assets/iron/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.starkbuild{
+  left: 0;
+  width: 15%;
+}
+.ironhead{
+  color: #000000;
+  font-family: captainamerica;
+  font-size: 8rem;
+  text-shadow: black;
+}
+@media (max-width:320px) {
+  .ironhead{
+      font-size: 5rem;
+  }
+  .ironhead{
+    font-size: 24px;
+  }
+}
+.thor{
+  height: 100vh ;
+  padding: 10%;
+  background-image: url(../assets/thor/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thorhead{
+  color: #d8d1d1;
+  font-family: captainamerica;
+  font-size: 8rem;
+  text-shadow: black;
+}
+@media (max-width:320px) {
+  .thoread{
+      font-size: 5rem;
+  }
+  .thortext{
+    font-size: 10px;
+  }
+}
+.thortext{
+  color: white;
+}
