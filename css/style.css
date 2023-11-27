@@ -211,3 +211,26 @@ li{
 .thortext{
   color: white;
 }
+.blackpanther{
+  height: 100vh ;
+  background-image: url(../assets/panther/bg.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bpthead{
+  color: #ffffff;
+  font-family: captainamerica;
+  font-size: 8rem;
+  text-shadow: black;
+}
+.bptimg{
+  width: 32.25%;
+}
+@media (max-width:320px) {
+  .bpthead{
+      font-size: 5rem;
+  }
+  .bpttext{
+    font-size: 10px;
+  }
+}

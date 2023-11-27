@@ -25,3 +25,4 @@ gsap.to('.imgholderthor', {
   rotation: 360,
   duration: 1,
 });
+
